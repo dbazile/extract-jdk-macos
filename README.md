@@ -58,3 +58,7 @@ extract-jdk.sh: Cleaning up...
 ## Disclaimer
 
 As with all shell scripts posted by strangers on Github, use at your own risk.
+
+## Credits
+
+Thanks to [this article](http://augustl.com/blog/2014/extracting_java_to_folder_no_installer_osx/) for explaining the extraction process.
