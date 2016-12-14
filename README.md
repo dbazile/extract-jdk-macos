@@ -1,4 +1,4 @@
-# extract-jdk.sh
+# extract-jdk-macos
 
 > Bash script for extracting JDK from macOS .dmg, thus avoiding Oracle whatever
 > shenanigans decides to inflict upon users of its installers.
