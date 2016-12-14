@@ -17,7 +17,7 @@ This little bash script fills the gap left by Oracle not providing a simple
 3. From the terminal, execute:
 
 ```
-~/Downloads$ ./extract-jdk.sh
+./extract-jdk.sh
 ```
 
 ### Output
