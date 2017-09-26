@@ -12,7 +12,7 @@ This little bash script fills the gap left by Oracle not providing a simple
 
 ## Usage
 
-1. Download the [macOS JDK `.dmg` file](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) as normal (you may also need [JCE 8](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)).
+1. Download the [macOS JDK `.dmg` file](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) as normal (you may also need [JCE 8](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) ([info](https://stackoverflow.com/questions/30278104/encryptionoperationnotpossibleexception-by-jasypt-with-bouncy-castle))).
 2. Download this script script to the same folder as the `.dmg` file
 3. From the terminal, execute:
 
