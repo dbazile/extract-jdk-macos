@@ -13,10 +13,9 @@ trap 'cleanup' ERR
 
 echo  ##########################################################################
 
-pattern_dmgfile="./jdk-*-macosx-x64.dmg"
-dmgfile=$(ls -1 $pattern_dmgfile)
-if [ "$(echo $dmgfile|wc -l)" -gt 1 ]; then
-	echo "$CMD: Error: $pattern_dmgfile matched more than one file"
+dmgfile=$(ls -1t ./jdk-*.dmg 2>/dev/null | head -1)
+if [ ! -e "$dmgfile" ]; then
+	echo "$CMD: Error: could not find a jdk .dmg file in current directory"
 	exit 1
 fi
 
