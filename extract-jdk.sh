@@ -15,7 +15,7 @@ echo  ##########################################################################
 
 dmgfile=$(ls -1t ./jdk-*.dmg 2>/dev/null | head -1)
 if [ ! -e "$dmgfile" ]; then
-	echo "$CMD: Error: could not find a jdk .dmg file in current directory"
+	echo "$CMD: error: could not find a jdk .dmg file in current directory"
 	exit 1
 fi
 
@@ -26,7 +26,7 @@ echo  ##########################################################################
 
 pkgfile=$(ls -1 $MOUNTPOINT/*.pkg)
 if [ "$(echo "$pkgfile"|wc -l)" -gt 1 ]; then
-	echo "$CMD: Error: $dmgfile contains more than one .pkg file"
+	echo "$CMD: error: $dmgfile contains more than one .pkg file"
 	exit 1
 fi
 
@@ -38,7 +38,7 @@ echo  ##########################################################################
 pattern_payloadfile="$INTERMEDIARY/jdk*.pkg/Payload"
 payloadfile=$(ls -1 $pattern_payloadfile)
 if [ "$(echo $payloadfile|wc -l)" -gt 1 ]; then
-	echo "$CMD: Error: $pattern_payloadfile matched more than one file"
+	echo "$CMD: error: $pattern_payloadfile matched more than one file"
 	exit 1
 fi
 
